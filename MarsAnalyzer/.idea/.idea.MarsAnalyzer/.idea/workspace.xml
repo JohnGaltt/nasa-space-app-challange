@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6925060c-e6c6-4f25-b61e-a4daf93945b7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarsAnalyzer.Data/NasaContext.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MarsAnalyzer/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+              <folding>
+                <marker date="1540032040573" expanded="true" signature="6:66" ph="..." />
+                <marker date="1540032040573" expanded="true" signature="90:2211" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="110:2209" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="156:2203" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="179:219" ph="/* width: 2048 ... */" />
+                <marker date="1540032040573" expanded="true" signature="465:931" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="532:917" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="681:898" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="1042:1382" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="1109:1368" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="1502:1838" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="1569:1824" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="1887:2193" ph="{...}" />
+                <marker date="1540032040573" expanded="true" signature="1954:2137" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NasaContext.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Data/NasaContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <marker date="1540032443983" expanded="true" signature="6:67" ph="..." />
+                <marker date="1540032443983" expanded="true" signature="96:604" ph="{...}" />
+                <marker date="1540032443983" expanded="true" signature="139:602" ph="{...}" />
+                <marker date="1540032443983" expanded="true" signature="293:596" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Web/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+              <folding>
+                <marker date="1540032532285" expanded="true" signature="6:402" ph="..." />
+                <marker date="1540032532285" expanded="true" signature="430:1383" ph="{...}" />
+                <marker date="1540032532285" expanded="true" signature="457:1381" ph="{...}" />
+                <marker date="1540032532285" expanded="true" signature="516:579" ph="{...}" />
+                <marker date="1540032532285" expanded="true" signature="802:911" ph="{...}" />
+                <marker date="1540032532285" expanded="true" signature="1099:1375" ph="{...}" />
+                <marker date="1540032532285" expanded="true" signature="1146:1223" ph="{...}" />
+                <marker date="1540032532285" expanded="true" signature="1240:1299" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PixelCondition.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <marker date="1540031979208" expanded="true" signature="33:34" ph="..." />
+                <marker date="1540031979208" expanded="true" signature="33:299" ph="{...}" />
+                <marker date="1540031979208" expanded="true" signature="67:297" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarsAnalyzer.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MarsAnalyzer/MarsAnalyzer.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MarsAnalyzer.Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MarsAnalyzer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MarsAnalyzer.Data/NasaContext.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MarsAnalyzer/MarsAnalyzer.csproj" />
+        <option value="$PROJECT_DIR$/MarsAnalyzer.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/MarsAnalyzer.Services/Class1.cs" />
+        <option value="$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs" />
+        <option value="$PROJECT_DIR$/MarsAnalyzer/Program.cs" />
+        <option value="$PROJECT_DIR$/MarsAnalyzer.Data/NasaContext.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="824" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MarsAnalyzer (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MarsAnalyzer (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MarsAnalyzer.Web" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/MarsAnalyzer/bin/Debug/netcoreapp2.1/MarsAnalyzer.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MarsAnalyzer" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MarsAnalyzer/MarsAnalyzer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6925060c-e6c6-4f25-b61e-a4daf93945b7" name="Default" comment="" />
+      <created>1540025149312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540025149312</updated>
+      <workItem from="1540025154832" duration="7145000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7145000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21785335" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="NuGet" visible="true" weight="0.32943678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14322917" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer/MarsAnalyzer.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Data/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Services/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <marker date="1540031979208" expanded="true" signature="33:34" ph="..." />
+            <marker date="1540031979208" expanded="true" signature="33:299" ph="{...}" />
+            <marker date="1540031979208" expanded="true" signature="67:297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+          <folding>
+            <marker date="1540032040573" expanded="true" signature="6:66" ph="..." />
+            <marker date="1540032040573" expanded="true" signature="90:2211" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="110:2209" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="156:2203" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="179:219" ph="/* width: 2048 ... */" />
+            <marker date="1540032040573" expanded="true" signature="465:931" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="532:917" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="681:898" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="1042:1382" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="1109:1368" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="1502:1838" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="1569:1824" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="1887:2193" ph="{...}" />
+            <marker date="1540032040573" expanded="true" signature="1954:2137" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Data/NasaContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <marker date="1540032443983" expanded="true" signature="6:67" ph="..." />
+            <marker date="1540032443983" expanded="true" signature="96:604" ph="{...}" />
+            <marker date="1540032443983" expanded="true" signature="139:602" ph="{...}" />
+            <marker date="1540032443983" expanded="true" signature="293:596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Web/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <marker date="1540032532285" expanded="true" signature="6:402" ph="..." />
+            <marker date="1540032532285" expanded="true" signature="430:1383" ph="{...}" />
+            <marker date="1540032532285" expanded="true" signature="457:1381" ph="{...}" />
+            <marker date="1540032532285" expanded="true" signature="516:579" ph="{...}" />
+            <marker date="1540032532285" expanded="true" signature="802:911" ph="{...}" />
+            <marker date="1540032532285" expanded="true" signature="1099:1375" ph="{...}" />
+            <marker date="1540032532285" expanded="true" signature="1146:1223" ph="{...}" />
+            <marker date="1540032532285" expanded="true" signature="1240:1299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer", "MarsAnalyzer\MarsAnalyzer.csproj", "{1D12BA73-624E-429F-8FDB-28F17EED4FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Data", "MarsAnalyzer.Data\MarsAnalyzer.Data.csproj", "{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Services", "MarsAnalyzer.Services\MarsAnalyzer.Services.csproj", "{2AA16946-5E46-4953-B004-3E768CC74DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Web", "MarsAnalyzer.Web\MarsAnalyzer.Web.csproj", "{860441F0-2F19-482D-8059-61F00FF13E9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D12BA73-624E-429F-8FDB-28F17EED4FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D12BA73-624E-429F-8FDB-28F17EED4FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D12BA73-624E-429F-8FDB-28F17EED4FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D12BA73-624E-429F-8FDB-28F17EED4FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AA16946-5E46-4953-B004-3E768CC74DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA16946-5E46-4953-B004-3E768CC74DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA16946-5E46-4953-B004-3E768CC74DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA16946-5E46-4953-B004-3E768CC74DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860441F0-2F19-482D-8059-61F00FF13E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860441F0-2F19-482D-8059-61F00FF13E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860441F0-2F19-482D-8059-61F00FF13E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860441F0-2F19-482D-8059-61F00FF13E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
