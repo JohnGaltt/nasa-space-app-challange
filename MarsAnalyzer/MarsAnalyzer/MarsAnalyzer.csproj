@@ -8,5 +8,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MarsAnalyzer.Data\MarsAnalyzer.Data.csproj" />
+    <ProjectReference Include="..\MarsAnalyzer.Services\MarsAnalyzer.Services.csproj" />
   </ItemGroup>
 </Project>

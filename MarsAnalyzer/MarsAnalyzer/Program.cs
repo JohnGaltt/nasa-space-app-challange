@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using MarsAnalyzer.Data.Model;
+using MarsAnalyzer.Services.DataServices;
 
 namespace MarsAnalyzer
 {
@@ -51,17 +52,8 @@ namespace MarsAnalyzer
                         765 / 100 * (Convert.ToInt32(pixel.R) + Convert.ToInt32(pixel.G) + Convert.ToInt32(pixel.B));
                 }
             }
-
-            for (int i = 0; i < img.Width; ++i)
-            {
-                for (int j = 0; j < img.Height; ++j)
-                {
-                    var item = array[i, j];
-                    Console.Write($"({item.GravityCoef}, {item.HeightCoef}, {item.TemperatureCoef})");
-                }
-
-                Console.Write("\n\n\n");
-            }
+            
+            DatabaseAccessLayerHelper.HeatMapHelper.InsertArrayOfPoints(array);
         }
     }
 }

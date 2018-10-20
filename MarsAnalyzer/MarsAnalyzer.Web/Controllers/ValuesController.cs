@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MarsAnalyzer.Data.Model;
+using MarsAnalyzer.Services.DataServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MarsAnalyzer.Web.Controllers
@@ -11,18 +13,25 @@ namespace MarsAnalyzer.Web.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] {"value1", "value2"};
-        }
+//        [HttpGet]
+//        public ActionResult<IEnumerable<string>> Get()
+//        {
+//            return new string[] {"value1", "value2"};
+//        }
+//
+//        // GET api/values/5
+//        [HttpGet("{id}")]
+//        public ActionResult<string> Get(int id)
+//        {
+//            return "value";
+//        }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [HttpGet]
+        public IEnumerable<PixelCondition> Get(int startPointX, int startPointY)
         {
-            return "value";
+            return DatabaseAccessLayerHelper.HeatMapHelper.GetAllPoints(startPointX, startPointY);
         }
+        
 
         // POST api/values
         [HttpPost]
