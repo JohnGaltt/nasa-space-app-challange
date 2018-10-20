@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6925060c-e6c6-4f25-b61e-a4daf93945b7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/MarsAnalyzer.Services/DataServices/DatabaseAccessLayerHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarsAnalyzer.Services/DataServices/HeatMapHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MarsAnalyzer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarsAnalyzer.Data/MarsAnalyzer.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarsAnalyzer.Data/MarsAnalyzer.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarsAnalyzer.Data/Model/PixelCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarsAnalyzer.Web/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarsAnalyzer.Web/Controllers/ValuesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarsAnalyzer/MarsAnalyzer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarsAnalyzer/MarsAnalyzer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarsAnalyzer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarsAnalyzer/Program.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,18 +74,17 @@
       <file leaf-file-name="ValuesController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Web/Controllers/ValuesController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+            <state relative-caret-position="455">
+              <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
               <folding>
-                <marker date="1540042407750" expanded="false" signature="6:201" ph="..." />
-                <marker date="1540042407750" expanded="true" signature="241:1277" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="346:1275" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="451:525" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="628:676" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="776:895" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="1001:1021" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="1133:1153" ph="{...}" />
-                <marker date="1540042407750" expanded="true" signature="1249:1269" ph="{...}" />
+                <marker date="1540042723105" expanded="false" signature="6:201" ph="..." />
+                <marker date="1540042723105" expanded="true" signature="241:1301" ph="{...}" />
+                <marker date="1540042723105" expanded="true" signature="346:1299" ph="{...}" />
+                <marker date="1540042723105" expanded="true" signature="361:700" ph="/* GET api/values ... */" />
+                <marker date="1540042723105" expanded="true" signature="800:919" ph="{...}" />
+                <marker date="1540042723105" expanded="true" signature="1025:1045" ph="{...}" />
+                <marker date="1540042723105" expanded="true" signature="1157:1177" ph="{...}" />
+                <marker date="1540042723105" expanded="true" signature="1273:1293" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -369,12 +361,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540025149312</updated>
       <workItem from="1540025154832" duration="7681000" />
-      <workItem from="1540033920144" duration="6127000" />
+      <workItem from="1540033920144" duration="7486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13808000" />
+    <option name="totallyTimeSpent" value="15167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,7 +388,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="REST Client" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46623093" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35511982" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.26252723" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14658849" />
@@ -423,7 +415,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -634,18 +626,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MarsAnalyzer.Web/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        <state relative-caret-position="455">
+          <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
           <folding>
-            <marker date="1540042407750" expanded="false" signature="6:201" ph="..." />
-            <marker date="1540042407750" expanded="true" signature="241:1277" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="346:1275" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="451:525" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="628:676" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="776:895" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="1001:1021" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="1133:1153" ph="{...}" />
-            <marker date="1540042407750" expanded="true" signature="1249:1269" ph="{...}" />
+            <marker date="1540042723105" expanded="false" signature="6:201" ph="..." />
+            <marker date="1540042723105" expanded="true" signature="241:1301" ph="{...}" />
+            <marker date="1540042723105" expanded="true" signature="346:1299" ph="{...}" />
+            <marker date="1540042723105" expanded="true" signature="361:700" ph="/* GET api/values ... */" />
+            <marker date="1540042723105" expanded="true" signature="800:919" ph="{...}" />
+            <marker date="1540042723105" expanded="true" signature="1025:1045" ph="{...}" />
+            <marker date="1540042723105" expanded="true" signature="1157:1177" ph="{...}" />
+            <marker date="1540042723105" expanded="true" signature="1273:1293" ph="{...}" />
           </folding>
         </state>
       </provider>

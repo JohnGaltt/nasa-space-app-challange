@@ -55,9 +55,16 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="bootstrap.css" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="ValuesController.cs" t="Include" />
         </e>
+        <e p="Images" t="Include">
+          <e p="Map.png" t="Include" />
+        </e>
+        <e p="landing_page.html" t="Include" />
         <e p="MarsAnalyzer.Web.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -69,8 +76,14 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="MarsAnalyzerWeb20181020045202 - Web Deploy.pubxml" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Styles" t="Include">
+          <e p="main.css" t="Include" />
+        </e>
         <e p="wwwroot" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
