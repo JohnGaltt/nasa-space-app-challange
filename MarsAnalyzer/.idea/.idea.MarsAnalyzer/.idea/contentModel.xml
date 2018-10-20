@@ -18,6 +18,11 @@
       <e p="MarsAnalyzer.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="MarsAnalyzer.Data.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20181020111811_InitialCreate.cs" t="Include" />
+          <e p="20181020111811_InitialCreate.Designer.cs" t="Include" />
+          <e p="NasaContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="Model" t="Include">
           <e p="PixelCondition.cs" t="Include" />
         </e>
@@ -32,6 +37,10 @@
       </e>
       <e p="MarsAnalyzer.Services" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DataServices" t="Include">
+          <e p="DatabaseAccessLayerHelper.cs" t="Include" />
+          <e p="HeatMapHelper.cs" t="Include" />
+        </e>
         <e p="MarsAnalyzer.Services.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
