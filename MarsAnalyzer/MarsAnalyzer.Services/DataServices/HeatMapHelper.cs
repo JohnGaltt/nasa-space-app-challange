@@ -12,11 +12,16 @@ namespace MarsAnalyzer.Services.DataServices
         {
             using (var ctx = new NasaContext())
             {
+                int i= 0; 
                 foreach (var point in points)
                 {
                     ctx.MapPoints.Add(point);
-                }
-
+                    i++;
+                    if (i == 100000)
+                    {
+                        ctx.SaveChanges();
+                    }
+                }    
                 ctx.SaveChanges();
             }
         }

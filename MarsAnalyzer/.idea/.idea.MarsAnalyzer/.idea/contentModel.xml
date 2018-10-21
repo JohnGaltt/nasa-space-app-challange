@@ -3,6 +3,19 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Admin\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_MarsAnalyzer.257525301.00" t="ExcludeRecursive" />
     <e p="E:\Projects\nasa-space-app-challange\nasa-space-app-challange\MarsAnalyzer" t="IncludeFlat">
+      <e p="ColorProcessing" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ColorObject.cs" t="Include" />
+        <e p="ColorProcessing.cs" t="Include" />
+        <e p="ColorProcessing.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="ColorProcessing.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="MarsAnalyzer" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="MarsAnalyzer.csproj" t="IncludeRecursive" />
@@ -17,6 +30,10 @@
       </e>
       <e p="MarsAnalyzer.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="InstallationType.cs" t="Include" />
+          <e p="ReliefTypes.cs" t="Include" />
+        </e>
         <e p="MarsAnalyzer.Data.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
           <e p="20181020111811_InitialCreate.cs" t="Include" />
@@ -24,6 +41,7 @@
           <e p="NasaContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Model" t="Include">
+          <e p="Construction.cs" t="Include" />
           <e p="PixelCondition.cs" t="Include" />
         </e>
         <e p="NasaContext.cs" t="Include" />
@@ -55,16 +73,442 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Content" t="Include">
-          <e p="bootstrap.css" t="Include" />
+        <e p="Client" t="Include">
+          <e p="Content" t="Include">
+            <e p="bootstrap.css" t="Include" />
+          </e>
+          <e p="Images" t="Include">
+            <e p="Map.png" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="Maps2" t="Include">
+            <e p="0" t="Include">
+              <e p="0" t="Include">
+                <e p="0.png" t="Include" />
+              </e>
+            </e>
+            <e p="1" t="Include">
+              <e p="0" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+              </e>
+              <e p="1" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+              </e>
+            </e>
+            <e p="2" t="Include">
+              <e p="0" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+              </e>
+              <e p="1" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+              </e>
+              <e p="2" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+              </e>
+              <e p="3" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+              </e>
+            </e>
+            <e p="3" t="Include">
+              <e p="0" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="1" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="2" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="3" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="4" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="5" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="6" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+              <e p="7" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+              </e>
+            </e>
+            <e p="4" t="Include">
+              <e p="0" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="1" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="10" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="11" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="12" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="13" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="14" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="15" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="2" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="3" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="4" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="5" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="6" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="7" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="8" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="9" t="Include">
+                <e p="0.png" t="Include" />
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+            </e>
+            <e p="empty.png" t="Include" />
+            <e p="index.html" t="Include" />
+          </e>
+          <e p="Styles" t="Include">
+            <e p="leaflet-bootstrapmodal.css" t="Include" />
+            <e p="leaflet-bootstrapmodal.js" t="Include" />
+            <e p="leaflet-jquerydialog.css" t="Include" />
+            <e p="leaflet-jquerydialog.js" t="Include" />
+            <e p="main.css" t="Include" />
+          </e>
         </e>
         <e p="Controllers" t="Include">
           <e p="ValuesController.cs" t="Include" />
         </e>
-        <e p="Images" t="Include">
-          <e p="Map.png" t="Include" />
-        </e>
-        <e p="landing_page.html" t="Include" />
         <e p="MarsAnalyzer.Web.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -81,9 +525,6 @@
           </e>
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="Styles" t="Include">
-          <e p="main.css" t="Include" />
-        </e>
         <e p="wwwroot" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
