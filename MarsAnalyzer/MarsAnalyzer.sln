@@ -1,16 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer", "MarsAnalyzer\MarsAnalyzer.csproj", "{1D12BA73-624E-429F-8FDB-28F17EED4FA8}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsAnalyzer", "MarsAnalyzer\MarsAnalyzer.csproj", "{1D12BA73-624E-429F-8FDB-28F17EED4FA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Data", "MarsAnalyzer.Data\MarsAnalyzer.Data.csproj", "{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsAnalyzer.Data", "MarsAnalyzer.Data\MarsAnalyzer.Data.csproj", "{8BD24CAF-8EC6-4E6E-B6CB-F9A946DE2E25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Services", "MarsAnalyzer.Services\MarsAnalyzer.Services.csproj", "{2AA16946-5E46-4953-B004-3E768CC74DE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsAnalyzer.Services", "MarsAnalyzer.Services\MarsAnalyzer.Services.csproj", "{2AA16946-5E46-4953-B004-3E768CC74DE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Web", "MarsAnalyzer.Web\MarsAnalyzer.Web.csproj", "{860441F0-2F19-482D-8059-61F00FF13E9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsAnalyzer.Web", "MarsAnalyzer.Web\MarsAnalyzer.Web.csproj", "{860441F0-2F19-482D-8059-61F00FF13E9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorProcessing", "ColorProcessing\ColorProcessing.csproj", "{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorProcessing", "ColorProcessing\ColorProcessing.csproj", "{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C4DB25B0-D765-4005-BCC8-4BD23147BF38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MartianConstructor", "MartianConstructor\MartianConstructor.csproj", "{D64DF4CF-A46B-4127-AFDC-9A90DFE16BDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +41,15 @@ Global
 		{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D64DF4CF-A46B-4127-AFDC-9A90DFE16BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D64DF4CF-A46B-4127-AFDC-9A90DFE16BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D64DF4CF-A46B-4127-AFDC-9A90DFE16BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D64DF4CF-A46B-4127-AFDC-9A90DFE16BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A24703E-8444-487B-B304-D2FA8B796DB1}
 	EndGlobalSection
 EndGlobal
