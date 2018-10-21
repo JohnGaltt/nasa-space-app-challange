@@ -135,8 +135,8 @@
                 modal.style.display = "none";
             }
         }
-        $('.open-viewer').click(function(event) {
-            console.log(event);
+        $('body').on('click', '.open-viewer', function (event) {
+            show3dModel(event.target.getAttribute('data-link'));
         });
     });
 
