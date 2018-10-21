@@ -1,0 +1,91 @@
+﻿html, body{
+	height: 100%;
+}
+.build-item{
+	padding: 5px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 2px;
+}
+.build-item > img{
+	max-width: 50px;
+}
+.build-item:hover{
+	border: 1px solid darkgrey;	
+}
+.build-item-title{
+	font-size: 14px;
+	color: blue;
+}
+.build-item-container{
+	width: 100%;
+	padding: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	overflow-y: scroll;
+}
+
+.modal {
+	visibility: hidden;
+	display: block;
+  }
+  
+  .modal[aria-hidden='false'] {
+	visibility: visible;
+	display: block;
+  }
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	height: 90%;
+}
+.sketchfab-embed-wrapper{
+	height: 95%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#iframe-container{
+	height: 95%;
+}
+.open-viewer{
+	color: blue;
+	cursor: pointer;
+}
+.open-viewer:hover{
+	text-decoration: underline;
+}

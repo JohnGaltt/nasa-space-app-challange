@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsAnalyzer.Web", "MarsAna
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorProcessing", "ColorProcessing\ColorProcessing.csproj", "{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C4DB25B0-D765-4005-BCC8-4BD23147BF38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D00F0A3E-5025-4AAE-BDE9-73E7C4FAF14C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DB25B0-D765-4005-BCC8-4BD23147BF38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

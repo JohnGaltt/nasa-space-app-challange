@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/leaflet-bootstrapmodal.css" rel="stylesheet" />
+    <link href="Styles/leaflet-jquerydialog.css" rel="stylesheet" />
+    <link href="Styles/main.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="Styles/leaflet-bootstrapmodal.js"></script>
+    <script type="text/javascript" src="Styles/leaflet-jquerydialog.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Landing page</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <!-- 
+        <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/fdc477133bd4490cbc9d81ed4e72f19e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                <a href="https://sketchfab.com/models/fdc477133bd4490cbc9d81ed4e72f19e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">КРАТЕР 3ds</a>
+                by <a href="https://sketchfab.com/sasha.golovach?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">sasha.golovach</a>
+                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+            </p>
+            </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div id="map" style="width: 100%; height: 100vh"></div>
+            </div>
+            <!-- Trigger the modal with a button -->
+            <!-- Trigger/Open The Modal -->
+            <button style="display:none" id="myBtn">Open Modal</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="iframe-container">
+
+                    </div>
+                    <!-- <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/4c4e1b5ac8b44c658da5229bab7b2845/embed?camera=0;autostart=1"
+                                frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var yFix = 450;
+        var map = {};
+        var data = [];
+        var selectedObject = null;
+        function getBuildingsFromApi(x, y) {
+            data =
+                [
+                    {
+                        Id: 1,
+                        Name: 'Mountains',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/575c8b51e6414c7fbdf5bb7f7836d85d/embed?autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 2,
+                        Name: 'Crater',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/fdc477133bd4490cbc9d81ed4e72f19e/embed?autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 3,
+                        Name: 'Valley',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/de4cf7d2962a4516b9c939ad71ee3900/embed?camera=0;autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 4,
+                        Name: 'Lava Tubes',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/0afc60acadbd4cabbd397e6fccbb7b12/embed?camera=0;autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 5,
+                        Name: 'House on Extentions',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/4c4e1b5ac8b44c658da5229bab7b2845/embed?camera=0;autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 6,
+                        Name: 'Plain',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/08aa501e044f44cda18f2625613f6d65/embed?autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    }
+                ];
+            console.log(data);
+        }
+        $(document).ready(function () {
+            var iframeHtml = '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="{{hmtlcode}}"' +
+                'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                '</div>'
+            //define configurations
+            var mapSW = [0, 4096],
+                mapNE = [4096, 0];
+            map = L.map('map').setView([0, 0], 0);
+            L.tileLayer('Maps2/{z}/{x}/{y}.png',
+                {
+                    minZoom: 2,
+                    maxZoom: 4,
+                    continuousWorld: false,
+                    noWrap: true,
+                    crs: L.CRS.Simple
+                }).addTo(map);
+
+            map.setMaxBounds(new L.LatLngBounds(
+                map.unproject(mapSW, map.getMaxZoom()),
+                map.unproject(mapNE, map.getMaxZoom())
+            ));
+
+            map.on('click', function (e) {
+                var points = map.project(e.latlng, map.getMaxZoom().toString());
+                console.log(points);
+                getBuildingsFromApi(points.x, points.y)
+                // var id = Math.floor(Math.random() * 7) + 1;
+                // selectedObject = data.find(x => x.Id == id)
+                var req = createCORSRequest('GET', 'http://marsanalyzerweb20181020045202.azurewebsites.net/api/Image?pointX=' + Math.floor(points.x) + '&pointY=' + Math.floor(points.y))
+                req.send();
+                // $.ajax({
+                //     method: 'GET',
+                //     url: 'http://marsanalyzerweb20181020045202.azurewebsites.net/api/Image?pointX=' + Math.floor(points.x) + '&pointY=' + Math.floor(points.y),
+                //     success: function (data) {
+                //         
+                //     }
+                // });
+
+
+
+            });
+            //process data
+            processData(data);
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks on the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+                modal.style.visibility = "inherit";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+        function createCORSRequest(method, url) {
+            var xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
+                // Check if the XMLHttpRequest object has a "withCredentials" property.
+                // "withCredentials" only exists on XMLHTTPRequest2 objects.
+                xhr.open(method, url, true);
+                xhr.onload = function () {
+                    var responseText = xhr.responseText;
+                    console.log(responseText);
+                    // var modal = document.getElementById('myModal');
+                    // modal.style.display = "block";
+                    // modal.style.visibility = "inherit";
+                    // document.getElementById('iframe-container').innerHTML = iframeHtml.replace('{{hmtlcode}}', data);
+                    // var marker = new L.marker(e.latlng).addTo(map).bindPopup(selectedObject.Name);
+                };
+            } else if (typeof XDomainRequest != "undefined") {
+                // Otherwise, check if XDomainRequest.
+                // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+                xhr.onload = function () {
+                    var responseText = xhr.responseText;
+                    console.log(responseText);
+                    // process the response.
+                };
+
+                xhr.onerror = function () {
+                    console.log('There was an error!');
+                };
+            } else {
+                // Otherwise, CORS is not supported by the browser.
+                xhr = null;
+            }
+            return xhr;
+        }
+        function processData(data) {
+            var group1 = [];
+            var group2 = [];
+
+            data.forEach(element => {
+                var point = L.point(element.X, element.Y);
+                var latlng = map.unproject(point, map.getMaxZoom().toString());
+                var newMarker = new L.marker(latlng);
+                newMarker.bindPopup('Name: <b>' + element.Name + '</b> <br /> Id: <b>' + element.Id + '</b><br /> SketchId: <b> ' + element.SketchupId + ' </b> <br /> <a href="#"> Click here to see model </a>')
+                if (element.Id < 7) {
+                    group1.push(newMarker.bindTooltip("my tooltip text").openTooltip());
+                } else {
+                    group2.push(newMarker.bindTooltip("my tooltip text").openTooltip());
+                }
+            });
+
+            var LgGroup1 = L.layerGroup(group1);
+            var LgGroup2 = L.layerGroup(group2);
+            var overlayMaps = {
+                "Group1": LgGroup1,
+                "Group2": LgGroup2
+            }
+
+            L.control.layers(null, overlayMaps).addTo(map);
+        }
+
+    </script>
+
+</body>
+
+</html>

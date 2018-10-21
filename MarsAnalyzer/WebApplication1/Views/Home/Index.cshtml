@@ -1,0 +1,198 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div id="map" style="width: 100%; height: 100vh"></div>
+        </div>
+        <!-- Trigger the modal with a button -->
+        <!-- Trigger/Open The Modal -->
+        <button style="display: none" id="myBtn">Open Modal</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="iframe-container">
+
+                </div>
+                <!-- <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/4c4e1b5ac8b44c658da5229bab7b2845/embed?camera=0;autostart=1"
+                                                                  frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var yFix = 450;
+    var map = {};
+    var data = [];
+    var selectedObject = null;
+    var iframeHtml =
+        '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="{{hmtlcode}}"' +
+            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+            '</div>';
+    var data = [
+        {
+            Id: 1,
+            Name: "Hills",
+            SketchupId: "https://sketchfab.com/models/575c8b51e6414c7fbdf5bb7f7836d85d/embed?autostart=1",
+            X: 2580,
+            Y: 1716,
+            hieght: 3400,
+            avgTemperature: -40
+        },
+        {
+            Id: 2,
+            Name: "Plane",
+            SketchupId: "https://sketchfab.com/models/08aa501e044f44cda18f2625613f6d65/embed?autostart=1",
+            X: 1440,
+            Y: 1320,
+            hieght: 45,
+            avgTemperature: -20
+        },
+        {
+            Id: 3,
+            Name: "Valley",
+            SketchupId: "https://sketchfab.com/models/de4cf7d2962a4516b9c939ad71ee3900/embed?camera=0;autostart=1",
+            X: 700,
+            Y: 2796,
+            hieght: 400,
+            avgTemperature: -12
+        },
+        {
+            Id: 4,
+            Name: "Crater",
+            SketchupId: "https://sketchfab.com/models/fdc477133bd4490cbc9d81ed4e72f19e/embed?autostart=1",
+            X: 307,
+            Y: 1768,
+            hieght: -400,
+            avgTemperature: -43
+        },
+        {
+            Id: 5,
+            Name: "Gorge",
+            SketchupId: "https://sketchfab.com/models/4c4e1b5ac8b44c658da5229bab7b2845/embed?camera=0;autostart=1",
+            X: 3284,
+            Y: 2260,
+            hieght: -1540,
+            avgTemperature: -70
+        },
+        {
+            Id: 6,
+            Name: "Lava Tubes",
+            SketchupId: "https://sketchfab.com/models/0afc60acadbd4cabbd397e6fccbb7b12/embed?camera=0;autostart=1",
+            X: 1848,
+            Y: 1916,
+            hieght: -120,
+            avgTemperature: 50
+        }
+    ];
+
+    $(document).ready(function() {
+        var mapSW = [0, 4096],
+            mapNE = [4096, 0];
+        map = L.map('map').setView([0, 0], 0);
+        L.tileLayer('Maps2/{z}/{x}/{y}.png',
+            {
+                minZoom: 2,
+                maxZoom: 4,
+                continuousWorld: false,
+                noWrap: true,
+                crs: L.CRS.Simple
+            }).addTo(map);
+
+        map.setMaxBounds(new L.LatLngBounds(
+            map.unproject(mapSW, map.getMaxZoom()),
+            map.unproject(mapNE, map.getMaxZoom())
+        ));
+
+        map.on('click',
+            function(e) {
+                var points = map.project(e.latlng, map.getMaxZoom().toString());
+                console.log(points);
+                $.ajax({
+                    method: 'GET',
+                    url: '/Home/Get?pointX=' + Math.floor(points.x) + '&pointY=' + Math.floor(points.y),
+                    success: function(data) {
+                        console.log(data);
+                        show3dModel(data, e);
+                    }
+                });
+            });
+
+        processData(data);
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+            modal.style.visibility = "inherit";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        $('.open-viewer').click(function(event) {
+            console.log(event);
+        });
+    });
+
+    function show3dModel(id, e, createNew = true) {
+        var modal = document.getElementById('myModal');
+        modal.style.display = "block";
+        modal.style.visibility = "inherit";
+        document.getElementById('iframe-container').innerHTML =
+            iframeHtml.replace('{{hmtlcode}}', id);
+        if (createNew) {
+            var element = data.find(x => x.SketchupId == id);
+            var marker = new L.marker(e.latlng).addTo(map).bindPopup('Name:' +
+                '<b>' +
+                element.Name +
+                '</b>' +
+                '<br /> Height: <b> ' +
+                (element.hieght + getRndInteger(-100, 100)) +
+                ' </b> ' +
+                '<br /> Avg. °C: <b> ' +
+                (element.avgTemperature + getRndInteger(-10, 10)) +
+                ' </b> ' +
+                '<br /> <span class="open-viewer" data-link="' +
+                element.SketchupId +
+                '"> Click here to see model </span>').openTooltip();
+        }
+
+    }
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+    }
+    function getTitle(text) {
+        return text.match('<title>(.*)?</title>')[1];
+    }
+
+    function processData(data) {
+        var group1 = [];
+
+        data.forEach(element => {
+            var point = L.point(element.X, element.Y);
+            var latlng = map.unproject(point, map.getMaxZoom().toString());
+            var newMarker = new L.marker(latlng);
+            var marker = L.marker(latlng).addTo(map);
+            marker.bindPopup('Name:' +
+                    '<b>' +
+                    element.Name +
+                    '</b>' +
+                    '<br /> Height: <b> ' +
+                    (element.hieght + getRndInteger(-100, 100)) +
+                    ' </b> ' +
+                    '<br /> Avg. °C: <b> ' +
+                    (element.avgTemperature + getRndInteger(-10, 10)) +
+                    ' </b> ' +
+                    '<br /> <span class="open-viewer" data-link="' +
+                    element.SketchupId +
+                    '"> Click here to see model </span>').openTooltip();
+        });
+    }
+
+</script>

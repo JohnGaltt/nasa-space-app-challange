@@ -30,24 +30,23 @@
             </div> -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 col-sm-3" style="height:100vh">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
-                        <h3>Mars Builder</h3>
-                    </div>
-                    <div class="row build-item-container">
-                        <div class="col-md-4 col-sm-4 col-lg-4 build-item">
-                            <img src="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png">
-                            <div class="build-item-title">
-                                Test Text
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col-md-12 col-sm-12">
+                <div id="map" style="width: 100%; height: 100vh"></div>
             </div>
-            <div class="col-md-9 col-sm-9">
-                <div id="map" style="width: 100%; height: 100%;"></div>
+            <!-- Trigger the modal with a button -->
+            <!-- Trigger/Open The Modal -->
+            <button style="display:none" id="myBtn">Open Modal</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="iframe-container">
+
+                    </div>
+                    <!-- <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/4c4e1b5ac8b44c658da5229bab7b2845/embed?camera=0;autostart=1"
+                                frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  -->
+                </div>
             </div>
         </div>
     </div>
@@ -55,8 +54,78 @@
     <script>
         var yFix = 450;
         var map = {};
-        var data = {}
+        var data = [];
+        var selectedObject = null;
+        function getBuildingsFromApi(x, y) {
+            data =
+                [
+                    {
+                        Id: 1,
+                        Name: 'Mountains',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/575c8b51e6414c7fbdf5bb7f7836d85d/embed?autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 2,
+                        Name: 'Crater',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/fdc477133bd4490cbc9d81ed4e72f19e/embed?autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 3,
+                        Name: 'Valley',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/de4cf7d2962a4516b9c939ad71ee3900/embed?camera=0;autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 4,
+                        Name: 'Lava Tubes',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/0afc60acadbd4cabbd397e6fccbb7b12/embed?camera=0;autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 5,
+                        Name: 'House on Extentions',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/4c4e1b5ac8b44c658da5229bab7b2845/embed?camera=0;autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    },
+                    {
+                        Id: 6,
+                        Name: 'Plain',
+                        X: 312,
+                        Y: 453,
+                        StetchfabHtml:
+                            '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/08aa501e044f44cda18f2625613f6d65/embed?autostart=1"' +
+                            'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                            '</div>'
+                    }
+                ];
+            console.log(data);
+        }
         $(document).ready(function () {
+            var iframeHtml = '<div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="{{hmtlcode}}"' +
+                'frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+                '</div>'
             //define configurations
             var mapSW = [0, 4096],
                 mapNE = [4096, 0];
@@ -78,22 +147,79 @@
             map.on('click', function (e) {
                 var points = map.project(e.latlng, map.getMaxZoom().toString());
                 console.log(points);
-                // $("#myModal").modal();
-                // ajax call to api { points }
-                // on success 
-                var marker = new L.marker(e.latlng).addTo(map).bindPopup('New item: ...');
+                getBuildingsFromApi(points.x, points.y)
+                var req = createCORSRequest('GET', '/Home?pointX=' + Math.floor(points.x) + '&pointY=' + Math.floor(points.y))
+                req.send();
             });
 
-            //mock data
-            var data = [
-                { Id: 5, Name: "Lopata", SketchupId: 1, X: 1000, Y: 1000, redirect: "Some url" },
-                { Id: 6, Name: "Lopata1", SketchupId: 2, X: 450, Y: 790 },
-                { Id: 7, Name: "Lopata2", SketchupId: 3, X: 3445, Y: 2500 },
-                { Id: 8, Name: "Lopata3", SketchupId: 4, X: 1200, Y: 555 }
-            ];
-            //process data
+
             processData(data);
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks on the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+                modal.style.visibility = "inherit";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         });
+        // Create the XHR object.
+        function createCORSRequest(method, url) {
+            var xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
+                // XHR for Chrome/Firefox/Opera/Safari.
+                xhr.open(method, url, true);
+            } else if (typeof XDomainRequest != "undefined") {
+                // XDomainRequest for IE.
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+            } else {
+                // CORS not supported.
+                xhr = null;
+            }
+            return xhr;
+        }
+
+        // Helper method to parse the title tag from the response.
+        function getTitle(text) {
+            return text.match('<title>(.*)?</title>')[1];
+        }
+
+        // Make the actual CORS request.
+        function makeCorsRequest() {
+            // This is a sample server that supports CORS.
+            var url = 'http://html5rocks-cors.s3-website-us-east-1.amazonaws.com/index.html';
+
+            var xhr = createCORSRequest('GET', url);
+            if (!xhr) {
+                alert('CORS not supported');
+                return;
+            }
+            // Response handlers.
+            xhr.onload = function () {
+                var text = xhr.responseText;
+                var title = getTitle(text);
+                alert('Response from CORS request to ' + url + ': ' + title);
+            };
+            xhr.onerror = function () {
+                alert('Woops, there was an error making the request.');
+            };
+            xhr.send();
+        }
 
         function processData(data) {
             var group1 = [];
@@ -110,6 +236,7 @@
                     group2.push(newMarker.bindTooltip("my tooltip text").openTooltip());
                 }
             });
+
             var LgGroup1 = L.layerGroup(group1);
             var LgGroup2 = L.layerGroup(group2);
             var overlayMaps = {
